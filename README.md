@@ -147,3 +147,12 @@ docker stack deploy -c portainer-agent-stack.yml portainer
  docker ps
  
 public-ip of swamr master:9000
+
+
+![Image](https://github.com/user-attachments/assets/36b4aeba-388c-4341-819f-c55b46fb2dbb)
+
+
+
+
+
+
