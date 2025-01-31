@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  movies:
+  cafe:
     image: kishor141/cafe:latest
     ports:
       - "81:80"
