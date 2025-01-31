@@ -1,1 +1,10 @@
-
+version: '3.8'
+services:
+  movies:
+    image: kishor141/cafe:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 2
+    volumes:
+       - "cafe"
