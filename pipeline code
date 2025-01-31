@@ -1,1 +1,31 @@
-
+pipeline {
+    agent any
+    stages {
+        stage('checkout') {
+            steps{
+                git branch: 'main', credentialsId: '090d244a-e5f9-4c45-84a9-bc7995b9567b', url: 'https://github.com/SaiKishor1/DevOps-Project-1.git'
+            }
+        }
+        stage('build') {
+            steps{
+                sh 'docker build -t cafe .'
+            }
+        }
+        stage('tag') {
+            steps{
+                sh 'docker tag cafe kishor141/cafe'
+            }
+        }
+        stage('push') {
+            steps{
+                sh 'docker login -u kishor141 -p $password'
+                sh 'docker push kishor141/cafe'
+            }
+        }
+        stage('deploy') {
+            steps{
+                sh 'docker stack deploy -c docker-compose.yml cafe'
+            }
+        }
+    }   
+}
