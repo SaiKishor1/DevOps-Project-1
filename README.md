@@ -18,11 +18,17 @@ DOCKER STACK	: Docker swarm + Docker compose
 
 
 sudo apt update
+
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
 sudo systemctl start docker
+
 sudo systemctl status docker
+
 docker swarm init 
+
 docker node ls
+
 
 
 2) INSTALLING JENKINS (MASTER)
