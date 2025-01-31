@@ -16,6 +16,7 @@ DOCKER STACK	: Docker swarm + Docker compose
 
 
 
+2) INSTALL DOCKER
 
 sudo apt update
 
@@ -31,7 +32,7 @@ docker node ls
 
 
 
-2) INSTALLING JENKINS (MASTER)
+3) INSTALLING JENKINS (MASTER)
    
 sudo apt update
 
@@ -53,6 +54,9 @@ sudo apt-get update
 
 sudo apt-get install jenkins
 
+build the pipelline 
+
+
 
 ![Image](https://github.com/user-attachments/assets/1a3aa555-b90f-4c1b-baff-c5442704ff86)
 
@@ -60,7 +64,7 @@ sudo apt-get install jenkins
 
 
 
-TRIVY INSTALLATION:
+4)TRIVY INSTALLATION:
 
 sudo apt-get install wget apt-transport-https gnupg lsb-release
 
@@ -75,9 +79,9 @@ sudo apt-get install trivy
 
 
 
-3) CREATE CUSTOM IMAGES AND PUSH TO DOCKERHUB WITH TAGS USING DOCKERFILE
+5) CREATE CUSTOM IMAGES AND PUSH TO DOCKERHUB WITH TAGS USING DOCKERFILE
 
-4)   GIVE PERMISSIONS
+6)   GIVE PERMISSIONS
 
 chmod 777 /var/run/docker.sock
 
@@ -92,7 +96,7 @@ systemctl restart docker.service
 
 
 
-5) WRITE DOCKER-COMPOSE.YML FILE AND PUSH TO GITHUB
+7) WRITE DOCKER-COMPOSE.YML FILE AND PUSH TO GITHUB
 
 
 
