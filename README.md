@@ -1,14 +1,21 @@
 # DOCKER  PROJECT 
 
 DOCKER FILE	: To create image by automation.
+
 DOCKER COMPOSE	: To create multiple containers on single server.
+
 DOCKER SWARM	: To create single containers on Multiple server.
+
 DOCKER STACK	: Docker swarm + Docker compose
 
 1) CREATE 2 UBUNTU SERVERS T2.MEDIUM AND INSTALL DOCKER ON ALL OF THEM & CREATE CLUSTER OF IT
 
 
 ![Image](https://github.com/user-attachments/assets/cc9f8bec-145f-4e8d-8085-d8619e264041)
+
+
+
+
 
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
